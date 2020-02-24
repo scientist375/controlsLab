@@ -1,0 +1,20 @@
+
+**** Build of configuration Debug for project Task 1b ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../main.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.3.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="E:/ECE 4550/Lab 5/Task 1b" --include_path="C:/F28379D/include" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.3.LTS/include" --define=CPU1 -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 122: warning #112-D: statement is unreachable
+"../main.c", line 145 (col. 41): advice #2614-D: (Performance) Use --fp_mode=relaxed to enable TMU hardware support for FP division.
+Finished building: "../main.c"
+ 
+Building target: "Task 1b.out"
+Invoking: C2000 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.3.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --define=CPU1 -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi -z -m"Task 1b.map" --stack_size=0x200 --warn_sections -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.3.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.3.LTS/include" --reread_libs --diag_wrap=off --display_error_number --xml_link_info="Task 1b_linkInfo.xml" --rom_model -o "Task 1b.out" "./DelayUs.obj" "./F2837xD_GlobalVariableDefs.obj" "./main.obj" "../F2837xD_Headers_nonBIOS_cpu1.cmd" "../user_RAM.cmd"  -llibc.a 
+<Linking>
+Finished building target: "Task 1b.out"
+ 
+
+**** Build Finished ****

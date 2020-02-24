@@ -1,0 +1,32 @@
+#include "F2837XD_device.h"
+#include "math.h"
+
+/**
+ * main.c
+ */
+Uint32 slow = 0;
+Uint32 fast = 0;
+Uint32 dummy = 0;
+int main(void)
+{
+    EALLOW;
+    WdRegs.WDCR.all = 0x0068;
+    ClkCfgRegs.SYSPLLMULT.all = 0;
+    ClkCfgRegs.SYSCLKDIVSEL.all = 0;
+    WdRegs.WDCR.all = 0x0028;
+    EDIS;
+    while(1) {
+            EALLOW;
+//            WdRegs.WDKEY.all = 0x0055;
+//            WdRegs.WDKEY.all = 0x00AA;
+            EDIS;
+            fast = fast + 1;
+            dummy = dummy + 1;
+            if(dummy == pow(10, 5)){
+                dummy = 0;
+                slow = slow + 1;
+            }
+
+    }
+	return 0;
+}

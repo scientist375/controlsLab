@@ -1,0 +1,1 @@
+"./F2837xD_GlobalVariableDefs.obj" "./main.obj" "../F2837xD_Headers_nonBIOS_cpu1.cmd" "../user.cmd" -llibc.a 

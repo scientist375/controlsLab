@@ -1,0 +1,1 @@
+"./F2837xD_GlobalVariableDefs.obj" "./main.obj" "../2837x_RAM_lnk_cpu1.cmd" "../F2837xD_Headers_nonBIOS_cpu1.cmd" -llibc.a 

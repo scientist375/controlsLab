@@ -1,0 +1,33 @@
+
+**** Build of configuration Debug for project Task 1 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../F2837xD_GlobalVariableDefs.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/F28379D/include" --include_path="E:/ECE 4550/Lab 5/Task 1" --include_path="C:/Users/ranve/OneDrive/Desktop/GATECH/Fall 2019/ECE 4550/F28379D/include" --define=CPU1 -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="F2837xD_GlobalVariableDefs.d_raw"  "../F2837xD_GlobalVariableDefs.c"
+ 
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'F2837xD_GlobalVariableDefs.obj' failed
+"C:/F28379D/include/F2837xD_device.h", line 232: fatal error #1965: cannot open source file "assert.h"
+1 catastrophic error detected in the compilation of "../F2837xD_GlobalVariableDefs.c".
+Compilation terminated.
+gmake: *** [F2837xD_GlobalVariableDefs.obj] Error 1
+Building file: "../DelayUs.asm"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/F28379D/include" --include_path="E:/ECE 4550/Lab 5/Task 1" --include_path="C:/Users/ranve/OneDrive/Desktop/GATECH/Fall 2019/ECE 4550/F28379D/include" --define=CPU1 -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="DelayUs.d_raw"  "../DelayUs.asm"
+Finished building: "../DelayUs.asm"
+ 
+Building file: "../main.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-c2000_18.12.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/F28379D/include" --include_path="E:/ECE 4550/Lab 5/Task 1" --include_path="C:/Users/ranve/OneDrive/Desktop/GATECH/Fall 2019/ECE 4550/F28379D/include" --define=CPU1 -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'main.obj' failed
+"C:/F28379D/include/F2837XD_device.h", line 232: fatal error #1965: cannot open source file "assert.h"
+1 catastrophic error detected in the compilation of "../main.c".
+Compilation terminated.
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
